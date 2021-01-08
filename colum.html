@@ -1,0 +1,124 @@
+<html>
+<head>
+    <style>
+        body
+{
+  
+ width: 100%;
+  background-color: #000000;
+}
+
+#wrapper
+{
+  width:100%;
+    padding-top: 202px;
+  position: relative;
+  background: #000000;
+}
+
+#wrapper:before
+{
+  content: "";
+  clear: both;
+  display: table;
+}
+#wrapper:after
+{
+  content: "";
+  clear: both;
+  display: table;
+}
+.left-column
+{
+  width: 50%;
+  min-height: 400px;
+ color: white;
+    border: 1px solid ;
+  float: left;
+}
+.right-column
+{
+  position: absolute;
+  width: 50%;
+     color: white;
+  min-height: 400px;
+ border: 1px solid ;
+  float: right;
+    right: 0px;
+}
+        
+    </style>
+    </head>
+    <body>
+    <div id="wrapper">
+
+  <div class="left-column">
+         <div class="row justify-content-md-center">
+                        <h2 class="col-md-11">Cold Turkey</h2>
+                        <p class="col-md-1 klik">Klik</p>
+                    </div>
+                    <p class="content-metode-terapan">Tujuan untuk memberhentikan penggunaan penggunaan narkoba/zat adiktif.</p>
+        </div>
+
+  <div class="right-column">
+         <div class="row justify-content-md-center">
+                        <h2 class="col-md-11">Therapeutic Community (TC)</h2>
+                        <p class="col-md-1 klik">Klik</p>
+                    </div>
+                    <p class="col-md-6 content-metode-terapan">Tujuan untuk menolong pecandu agar mampu kembali ke tengah masyarakat dan dapat kembali menjalani kehidupan yang produktif.</p>
+        </div>
+
+</div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+        <script>
+            var $body = $("body"),
+            rightColumn = $(".right-column"),
+            leftColumn = $(".left-column"),
+            expand = false;
+
+            rightColumn.click(function()
+              {
+                if(!expand)
+                {
+                  TweenLite.to(rightColumn, 1, {width:"70%"});
+                  TweenLite.to(leftColumn, 1, {width:"30%"});
+                  TweenLite.to(rightColumn, 1, {height:"80%"});
+                     TweenLite.to(leftColumn, 1, {height:"0%"});
+                  expand = true;
+                }
+                else
+                {
+                  TweenLite.to(rightColumn, 1, {width:"70%"});
+                    TweenLite.to(leftColumn, 1, {width:"50%"});
+                    TweenLite.to(rightColumn, 1, {height:"0%"});
+                  TweenLite.to(rightColumn, .7, {width:"50%", delay:.2});
+                  expand = false;
+                }
+              });
+            
+             leftColumn.click(function()
+              {
+                if(!expand)
+                {
+                  TweenLite.to(leftColumn, 1, {width:"70%", delay:.1});
+                    TweenLite.to(leftColumn, 1, {height:"60%"});
+                    TweenLite.to(rightColumn, 1, {height:"0%"});
+                  TweenLite.to(rightColumn, 1, {width:"30%"});
+                 
+                  expand = true;
+                }
+                else
+                {
+                  TweenLite.to(rightColumn, 1, {width:"70%", delay:.1});
+                    TweenLite.to(leftColumn, 1, {width:"50%", delay:.1});
+                    TweenLite.to(leftColumn, 1, {height:"0%"});
+                  TweenLite.to(rightColumn, .7, {width:"50%", delay:.1});
+                  expand = false;
+                }
+              });
+
+
+        </script>
+    </body>
+</html>

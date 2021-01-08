@@ -1,0 +1,405 @@
+html, body{
+    margin: 0;
+    height: 100%;
+    background: #000;
+    color: #fff;
+}
+
+.header{
+    height: 100%;
+}
+.header-atas{
+    position: absolute;
+    top: 0;
+    right: 270px;
+    color: #fff;
+}
+.header-atas h1{
+    padding-top: 20px;
+    font-family: NM-L;
+    font-size: 40px;
+    margin-left: 7px;
+}
+.header-bawah{
+    position: absolute;
+    bottom: 50px;
+    left: 28px;
+    color: #fff;
+}
+.header-bawah img{
+    padding-top: 20px;
+    margin-left: -7px;
+    width: 50%;
+}
+.header-bawah p{
+    padding-top: 10px;
+    font-family: NM-R;
+    font-size: 20px;
+    display: none;
+}
+
+.statistik{
+    margin-bottom: 100px;
+}
+.statistik h2{
+    font-family: NM-R;
+    text-align: center;
+}
+.statistik p{
+    font-family: SM-R;
+    text-align: center;
+    font-size: 25px;
+}
+.statistik .content-statistik{
+    font-family: SM-R;
+    font-size: 12px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.statistik .content-statistik .border-statistika{
+ border: 1px solid #fff;
+}
+.statistik .content-statistik button{
+    background: transparent;
+    border: none;
+    color: #fff;
+}
+body{
+    padding-right: 0px !important;
+}
+
+@-webkit-keyframes border {
+    from {
+        bottom: 2px;
+        top: 2px;
+    }
+    to {
+        bottom: -8px;
+        right: -1px;
+    }
+}
+
+.statistik .content-statistik .btn-tutup{
+    width: 25px;
+    transform: rotate(90deg);
+    background: #000;
+    padding: 8px 5px;
+    border-radius: 100%;
+    margin-top: 5px;
+}
+.statistik .content-statistik img{
+    width: 25px;
+    transform: rotate(-90deg);
+    background: #f94e4e;
+    padding: 8px 5px;
+    border-radius: 100%;
+    margin-top: 5px;
+}
+.statistik .content-statistik h1{
+    font-family: NM-L;
+    font-size: 79px;
+    padding-bottom: 50px;
+}
+.statistik .content-statistik h5{
+    font-family: SM-R;
+    padding-top: 5px;
+}
+
+.statistik .content-statistik .modal-statistika-index{
+    background: #f94e4e;
+    position: absolute;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    overflow: auto;
+    height: auto;
+    width: auto;
+}
+.statistik .content-statistik .modal-statistika-index p{
+    font-family: Helv;
+    font-size: 12px !important;
+    text-align: left;
+}
+.modal-backdrop{
+    display: none;
+}
+.modal-open{
+    overflow: auto !important;
+}
+
+.statistik .btn-statistik{
+    margin-top: 50px;
+    border: 1px solid #fff;
+    border-radius: 100px;
+}
+.statistik .btn-statistik a{
+    font-family: NM-R;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+}
+.statistik .btn-statistik a .baca-lengkap{
+    height: 100%;
+    width: 160px;
+    background: #fff;
+    border-radius: 100px;
+    position: absolute;
+}
+.statistik .btn-statistik a img{
+    width: 20px;
+}
+
+.left-column
+{
+  width: 50%;
+  min-height: 400px;
+ position: absolute;
+    border: 1px solid ;
+  float: left;
+cursor: pointer;
+    left: 0;
+}
+.right-column
+{
+  position: absolute;
+  width: 50%;
+  min-height: 400px;
+ border: 1px solid ;
+  float: right;
+    right: 0px;
+cursor: pointer;
+}
+       
+.metode-terapan {
+    padding: 0px 28px;
+    margin-bottom: 100px;
+}
+.metode-terapan .row{
+  
+}
+.metode-terapan h1{
+    font-family: NM-R;
+    font-size: 60px;
+}
+.metode-terapan .box-metode-terapan {
+    border-left: none;
+    border-right: none;
+    height: 400px;
+    text-decoration: none;
+    color: #fff;
+    padding: 0;
+    width:100%;
+    position: relative;
+}
+
+.Modalvideo{
+    background: rgba(0, 0, 0, 0.8);
+}
+.Modalvideo iframe{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.Modalvideo button{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    background: transparent;
+    border: none;
+    font-size: 36px;
+}
+
+
+
+.box-metode-terapan:before
+{
+  content: "";
+  clear: both;
+  display: table;
+}
+.box-metode-terapan:after
+{
+  content: "";
+  clear: both;
+  display: table;
+}
+.metode-terapan .klik{
+    padding-top: 10px;
+    padding-left: 0px !important;
+    padding-right: 30px !important;
+    text-align: right;
+}
+.metode-terapan  h2{
+    font-family: SM-B;
+    padding: 10px 0px 0px 0px;
+    color: #f94e4e;
+}
+.metode-terapan  .klik{
+    font-family: SM-R;
+    color: red;
+}
+.metode-video {
+    width: 0px;
+    padding: 15px 0px 0px 0px;
+    float: right;
+    position: relative;
+    left: 130px;
+    cursor: pointer;
+}
+.metode-videox {
+    width: 0px;
+    padding: 15px 0px 0px 0px;
+    float: left;
+    position: relative;
+    left: 250px;
+    cursor: pointer;
+}
+.metode-terapan  .content-metode-terapan{
+    position: absolute;
+    bottom: 0;
+    font-family: Helv;
+    padding: 12px;;
+}
+.metode-terapan .baca-lengkap{
+    font-family: NM-R;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    float: right;
+    padding-right: 15px;
+}
+.metode-terapan .baca-lengkap img{
+    width: 20px;
+}
+
+.rangkaian-hidup {
+    margin-bottom: 100px;
+    padding: 0px 45px;
+}
+.rangkaian-hidup .box-rangkaian-hidup{
+    border: 1px solid #fff;
+    border-left: none;
+    border-right: none;
+}
+.rangkaian-hidup h1{
+    font-family: NM-R;
+    font-size: 60px;
+}
+.rangkaian-hidup .about-rangkaian-hidup{
+    position: absolute;
+    bottom: 0;
+    font-family: Helv;
+    padding: 0;
+}
+.rangkaian-hidup .baca-lengkap{
+    font-family: NM-R;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    text-align: center;
+}
+
+.dokumen-potensi {
+    margin-bottom: 100px;
+    padding: 0px 28px;
+}
+
+.dokumen-potensi h1{
+    font-family: NM-R;
+    font-size: 60px;
+}
+
+.dokumen-potensi .about-dokumen-potensi{
+    position: absolute;
+    bottom: -10px;
+    font-family: Helv;
+    padding: 0;
+}
+
+.dokumen-potensi .doc-profil{
+    margin-top: 50px;
+    padding-right: 32px;
+    
+}
+.dokumen-potensi .text-profil{
+    color: #000;
+    background: #fff;
+    font-family: NM-U;
+    font-size: 17px;
+    margin: 0;
+    width: 110px;
+    padding-top: 2px;
+    padding-left: 10px;
+    margin-left: -15px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 100px;
+}
+.dokumen-potensi a{
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    margin-bottom: 10px;
+}
+.dokumen-potensi a h2{
+    font-family: SM-B;
+    font-size: 28px;
+    padding-top: 7px;
+}
+.dokumen-potensi a img{
+    max-width: 30px;
+    height: 30px;
+    background: #f94e4e;
+    padding: 10px 8px;
+    border-radius: 100%;
+    margin-top: 10px;
+}
+
+.store {
+    margin-bottom: 100px;
+    padding: 0px 28px;
+}
+
+.store h1{
+    font-family: NM-R;
+    font-size: 60px;
+}
+.store h2{
+    font-family: SM-B;
+    font-size: 28px;
+}
+
+.store .about-store{
+    position: absolute;
+    bottom: -10px;
+    font-family: Helv;
+    padding: 0;
+}
+
+.btn-add-cart {
+    display: none;
+    color: white;
+    background-color: #f94e4e;
+    line-height: 30px;
+    font-family: SM-B;
+    font-size: 17px;
+    z-index: 99;
+}
+
+.swiper3 .swiper-slide:hover .btn-add-cart {
+    display: block;
+    position: absolute;
+    top: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    width: 90%;
+    text-align: center;
+    padding: 20px;
+}
+
+.swiper3 .swiper-slide:hover btn-add-cart {
+    filter: none;
+    -webkit-filter: grayscale(0%);
+}
