@@ -109,11 +109,12 @@ body{
 .statistik .content-statistik .modal-statistika-index{
     background: #f94e4e;
     position: absolute;
+    
     padding-left: 0px !important;
     padding-right: 0px !important;
     overflow: auto;
     height: auto;
-    width: auto;
+    width:420px;;
 }
 .statistik .content-statistik .modal-statistika-index p{
     font-family: Helv;
