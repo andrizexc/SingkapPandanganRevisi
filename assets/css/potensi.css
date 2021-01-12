@@ -1,6 +1,13 @@
 body {
     background-color: #ffffff;
 }
+h3 {
+    color: #f94e4e;
+    font-family: NM-R;
+}
+h4 {
+    font-family: NM-L;
+}
 .content-potensi {
     padding-top: 200px;
 }
@@ -29,7 +36,9 @@ padding-bottom: 5px;
 }
 .active2 {
     background-color: #f94e4e;
+    
     width: 100%;
+   
 }
 .box-pot {
     color: #000000;
@@ -75,7 +84,7 @@ padding-bottom: 5px;
     border: solid 1px;
 }
 .box-detl {
-        font-family: NM-R;
+        
 }
 
 
@@ -106,7 +115,6 @@ padding-bottom: 5px;
 
  .box-btn{
     height: 100%;
-    
     position: absolute;
 }
 .two-swiper{

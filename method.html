@@ -85,7 +85,8 @@
                             <h2 class="col-md-11">Rehabilitasi Medis.</h2>
                             <p class="col-md-1 klik">Klik</p>
                         </div>
-                        <p class="col-md-6 content-metode-terapan">Pecandu diperiksa seluruh kesehatannya baik fisik dan mental oleh dokter terlatih.</p>
+                        
+                        <p class="col-md-6 content-metode-terapan textna content">tahap ini pecandu diperiksa seluruh kesehatannya baik fisik dan mental oleh dokter terlatih. Dokterlah yang memutuskan apakah pecandu perlu diberikan obat tertentu untuk mengurangi gejala putus zat (sakau) yang ia derita. Pemberian obat tergantung dari jenis narkoba dan berat ringanya gejala putus zat. Dalam hal ini dokter butuh kepekaan, pengalaman, dan keahlian guna memdeteksi gejala kecanduan narkoba tersebut.</p>
                     </div>
                 <img data-toggle="modal" data-target="#Modalvideo1" src="assets/img/video.png" class="metode-videox" href="#">
                 </div>
@@ -95,7 +96,7 @@
                             <h2 class="col-md-11">Rehabilitasi Non-Medis.</h2>
                             <p class="col-md-1 klik">Klik</p>
                         </div>
-                        <p class="col-md-6 content-metode-terapan">Tahap ini pecandu ikut dalam program rehabilitasi, contoh di bawah BNN adalah tempat rehabilitasi di daerah Lido, Baddoka, dll.</p>
+                        <p class="col-md-6 content-metode-terapan content">tahap ini pecandu ikut dalam program rehabilitasi. Di Indonesia sudah di bangun tempat-tempat rehabilitasi, sebagai contoh di bawah BNN adalah tempat rehabilitasi di daerah Lido (Kampus Unitra), Baddoka (Makassar), dan Samarinda. Di tempat rehabilitasi ini, pecandu menjalani berbagai program diantaranya program therapeutic communities (TC), 12 steps (dua belas langkah, pendekatan keagamaan, dan lain-lain.</p>
                     </div>
                 <img data-toggle="modal" data-target="#Modalvideo2" src="assets/img/video.png" class="metode-videoc" href="#">
                 </div>
@@ -115,7 +116,7 @@
                             <h2 class="col-md-11">Cold Turkey.</h2>
                             <p class="col-md-1 klik">Klik</p>
                         </div>
-                        <p class="col-md-6 content-metode-terapan">Tujuan untuk menolong pecandu agar mampu kembali ke tengah masyarakat dan dapat kembali menjalani kehidupan yang produktif.</p>
+                        <p class="col-md-6 content-metode-terapan">Tahap ini pecandu diberikan kegiatan sesuai dengan minat dan bakat untuk mengisi kegiatan sehari-hari, pecandu dapat kembali ke sekolah atau tempat kerja namun tetap berada di bawah pengawasan.</p>
                     </div>
                 <img data-toggle="modal" data-target="#Modalvideo1" src="assets/img/video.png" class="metode-videox2" href="#">
                 </div>
@@ -135,7 +136,7 @@
                             <h2 class="col-md-11">Terapi Substitusi Opioda.</h2>
                             <p class="col-md-1 klik">Klik</p>
                         </div>
-                        <p class="col-md-6 content-metode-terapan">Digunakan untuk pasien-pasien ketergantungan heroin (opioda). Untuk pengguna opioda hard core addict (pengguna opioda yang telah bertahun-tahun).</p>
+                        <p class="col-md-6 content-metode-terapan content">hanya digunakan untuk pasien-pasien ketergantungan heroin (opioda). Untuk pengguna yang telah bertahun-tahun menggunakan opioda suntikan, pecandu biasanya mengalami kekambuhan kronis sehingga perlu berulang kali menjalani terapi ketergantungan. Kebutuhan heroin (narkotika ilegal) diganti (substitusi) dengan narkotika legal. Obat-obatan ini digunakan sebagai obat detoksifikasi, dan diberikan dalam dosis yang sesuai dengan kebutuhan pecandu, kemudian secara bertahap dosisnya diturunkan.</p>
                     </div>
                 <img data-toggle="modal" data-target="#Modalvideo3" src="assets/img/video.png" class="metode-video2" href="#">
                 </div>
@@ -216,6 +217,18 @@
 				
 
 			});
+          
+            var $notes = $('.content').html();
+            var $viewMore = '<a href="#" class="viewMore">View More</a>';
+
+            if ($notes.split(' ').length > 20) {
+              $('.content').html($notes.split(' ').slice(0, 20).join(' ') + " ... " + $viewMore);
+            }
+
+            $('.viewMore').on('click', function() {
+              $('.content').html($notes);
+            });
+          
 		</script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
         <script>

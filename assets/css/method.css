@@ -224,6 +224,7 @@ html, body{
 .metode-terapan  .content-metode-terapan{
     position: absolute;
     bottom: 0;
+    width: 420px;
     font-family: Helv;
     padding: 12px;;
 }
